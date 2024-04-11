@@ -585,3 +585,27 @@ header h1 {
     width: 100%;
   }
 }
+
+/* ---------------------------------------- */ 
+
+/* Adjust sidebar styles */
+.sidebar {
+  position:  sticky;
+  top: 8,5%;
+  left: 0;
+  width: 10%; /* Adjust width as needed */
+  padding: 20px;
+  overflow-x: auto;
+  overflow-y: auto; /* Scrollable sidebar */
+}
+
+/* Active link style */
+.nav-link.active {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.paddingproducto {
+  padding-left: 12%;
+  padding-right: 2%;
+}

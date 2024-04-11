@@ -71,25 +71,40 @@
             </div>
         </nav>
     </div>
-    <div class="wrapper fadeInDown">
-        <div id="formContent">
-            <!-- Icon -->
-            <div class="fadeIn first">
-                <img src="img/usuario.png" width="21" height="21" id="icon" alt="User Icon">
-            </div>
-
-            <!-- Login Form -->
-            <form>
-                <input type="text" id="login" class="fadeIn second input" name="login" placeholder="Usuario">
-                <input type="text" id="password" class="fadeIn third input" name="login" placeholder="Contraseña">
-                <input type="submit" class="fadeIn fourth" value="Ingresar">
-            </form>
-
-            <!-- Remind Passowrd -->
-            <div id="formFooter">
-                <a class="underlineHover" href="#">Olvido la contraseña?</a>
-            </div>
-
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="estado_admin.html">
+                                Estado
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="productos_admin.html">
+                                Productos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="login.html">
+                                Salir
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Page content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-1">Estado</h1>
+                </div>
+                <div class="container">
+                    <h2>Main Content</h2>
+                    <p>This is the main content area.</p>
+                </div>
+            </main>
         </div>
     </div>
 </body>
