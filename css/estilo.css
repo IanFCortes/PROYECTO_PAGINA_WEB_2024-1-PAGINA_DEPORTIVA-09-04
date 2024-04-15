@@ -593,7 +593,7 @@ header h1 {
   position:  sticky;
   top: 8,5%;
   left: 0;
-  width: 10%; /* Adjust width as needed */
+  width: 200px; /* Adjust width as needed */
   padding: 20px;
   overflow-x: auto;
   overflow-y: auto; /* Scrollable sidebar */
