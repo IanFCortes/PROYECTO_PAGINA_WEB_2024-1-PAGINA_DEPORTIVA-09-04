@@ -169,7 +169,7 @@ input[type=reset]:active {
 
 input[type=text],
 input[type=password],
-input[type=date] {
+input[type=email] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
@@ -192,14 +192,14 @@ input[type=date] {
 
 input[type=text],
 input[type=password],
-input[type=date]:focus {
+input[type=email]:focus {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
 }
 
 input[type=text],
 input[type=password],
-input[type=date]:placeholder {
+input[type=email]:placeholder {
   color: #cccccc;
 }
 
