@@ -402,7 +402,7 @@ header h1 {
 }
 
 .contenedor .contenedor-items .item {
-  max-width: 200px;
+  max-width: 300px;
   margin: auto;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -618,4 +618,8 @@ header h1 {
 .paddingproducto {
   padding-left: 12%;
   padding-right: 2%;
+}
+
+.marginpequeño{
+  margin: 3%;
 }
