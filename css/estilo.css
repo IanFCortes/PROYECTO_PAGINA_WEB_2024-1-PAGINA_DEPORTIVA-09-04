@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.h5letra{
+  color: white;
+}
+
 .fondonavbar {
   background-color: #0000003f;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -599,7 +603,7 @@ header h1 {
   position:  sticky;
   top: 8,5%;
   left: 0;
-  width: 200px; /* Adjust width as needed */
+  width: 150px; /* Adjust width as needed */
   padding: 20px;
   overflow-x: auto;
   overflow-y: auto; /* Scrollable sidebar */
