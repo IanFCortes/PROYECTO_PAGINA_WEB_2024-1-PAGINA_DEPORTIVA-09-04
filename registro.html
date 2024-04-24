@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAGINA CAMISETAS DEPORTIVAS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/app.js"></script>
     <style>
@@ -16,98 +17,106 @@
             background-attachment: fixed;
             position: relative;
         }
+
         .overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.336); 
+            background-color: rgba(0, 0, 0, 0.336);
         }
     </style>
 </head>
 
 <body>
     <div>
-    <nav class="navbar navbar-dark navbar-expand-lg fondonavbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/ADVERSOS.png" alt="Bootstrap" width="60" height="54">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Equipos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="colocolo.html">Colo-Colo</a></li>                            
-                            <li><a class="dropdown-item" href="ucatolica.html">U. Catolica</a></li>
-                            <li><a class="dropdown-item" href="udechile.html">U. De Chile</a></li>
-                            <li><a class="dropdown-item" href="huachipato.html">Huachipato</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="SOPORTE.html">Soporte</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <a href="login.html" class="btn btncolor m-2">Login</a>
-                </form>
-                <form class="d-flex">
-                    <a href="admin.html" class="btn btncolor m-2">Admin</a>
-                </form>
+        <nav class="navbar navbar-dark navbar-expand-lg fondonavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/ADVERSOS.png" alt="Bootstrap" width="60" height="54">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Equipos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="colocolo.html">Colo-Colo</a></li>
+                                <li><a class="dropdown-item" href="ucatolica.html">U. Catolica</a></li>
+                                <li><a class="dropdown-item" href="udechile.html">U. De Chile</a></li>
+                                <li><a class="dropdown-item" href="huachipato.html">Huachipato</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="SOPORTE.html">Soporte</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="login.html" class="btn btncolor m-2">Login</a>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-</div>
+        </nav>
+    </div>
     <div class="container">
-        <form action="login.html" method="post" onsubmit="return validarContraseña()">
+        <form action="login.html" method="post" onsubmit="return validarContraseña()" class="was-validated">
             <div class="mb-3 mt-3">
                 <div class="mb-3 mt-3">
                     <h5 class="h5letra">Usuario</h5>
-                  <label for="text" class="form-label"></label>
-                  <input type="text" class="form-control" id="text" placeholder="Ingresa tu usuario" name="text" minlength="6" pattern="[A-Za-z]+" required>
+                    <label for="text" class="form-label"></label>
+                    <input type="text" class="form-control" id="text" placeholder="Ingresa tu usuario" name="text"
+                        minlength="6" pattern="[A-Za-z]+" required>
                 </div>
+                <div class="invalid-feedback">Porfavor rellena esta casilla.</div>
                 <h5 class="h5letra">Nombre</h5>
-              <label for="text" class="form-label"></label>
-              <input type="text" class="form-control" id="text" placeholder="Ingresa tu nombre" name="text" minlength="3" pattern="[A-Za-z]+" required>
+                <label for="text" class="form-label"></label>
+                <input type="text" class="form-control" id="text" placeholder="Ingresa tu nombre" name="text"
+                    minlength="3" pattern="[A-Za-z]+" required>
             </div>
             <div class="mb-3 mt-3">
                 <h5 class="h5letra">Apellido</h5>
-              <label for="text" class="form-label"></label>
-              <input type="text" class="form-control" id="text" placeholder="Ingresa tu apellido" name="text" minlength="4" pattern="[A-Za-z]+" required>
+                <label for="text" class="form-label"></label>
+                <input type="text" class="form-control" id="text" placeholder="Ingresa tu apellido" name="text"
+                    minlength="4" pattern="[A-Za-z]+" required>
             </div>
             <div class="mb-3 mt-3">
                 <h5 class="h5letra">Contraseña</h5>
-              <label for="contraseña" class="form-label"></label>
-              <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña" name="contraseña" minlength="8" required>
+                <label for="contraseña" class="form-label"></label>
+                <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña"
+                    name="contraseña" minlength="8" required>
             </div>
             <div class="mb-3 mt-3">
                 <h5 class="h5letra">Email</h5>
-              <label for="text" class="form-label"></label>
-              <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email" required>
+                <label for="text" class="form-label"></label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email"
+                    required>
             </div>
             <div class="form-check m-2">
-              <label class="form-check-label h5letra">
-                <input class="form-check-input" type="checkbox" name="remember" required> Acepto terminos y condiciones.
-              </label>
+                <label class="form-check-label h5letra">
+                    <input class="form-check-input" type="checkbox" name="remember" required> Acepto terminos y
+                    condiciones.
+                </label>
             </div>
+            <div class="invalid-feedback">Porfavor rellena esta casilla.</div>
             <div class="mt-3 m-2">
                 <button type="submit" class="btn btncolor">Guardar</button>
             </div>
-          </form>
+        </form>
     </div>
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </html>

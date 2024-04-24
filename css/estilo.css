@@ -2,6 +2,11 @@
   display: flex;
 }
 
+.carritonavbar {
+  padding-right: 6%;
+  
+}
+
 .h5letra{
   color: white;
 }
