@@ -108,26 +108,17 @@
             <div class="col-8">
                 <div class="pb-5">
                     <h1 class="display-5 h5letra">Agrega un producto...</h5>
-                    <form id="idformagregadoproductos" class="form-control">
-                        <label for="idproducto">ID del producto: </label>
-                        <br>
-                        <input id="idproducto" type="text">
-                        <br>
-                        <label for="nombreproducto">Nombre del producto: </label>
-                        <br>
-                        <input id="idnombreproducto" type="text">
-                        <br>
-                        <label for="cantidadproducto">Cantidad del producto: </label>
-                        <br>
-                        <input id="idcantidadproducto" type="number">
-                        <br>
-                        <label for="precioproducto">Precio del producto: </label>
-                        <br>
-                        <input id="idprecioproducto" type="text">
-                        <div>
-                            <button type="sumbit" class="btn btncolor" onclick="agregarFila()">Agregar producto</button>
-                        </div>
-                    </form>
+                        <form id="idformagregadoproductos" class="form-control">
+                            <label for="nombre">ID:</label>
+                            <input type="text" id="IDproducto" name="nombre"><br><br>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre"><br><br>
+                            <label for="apellido">Cantidad:</label>
+                            <input type="text" id="cantidad" name="apellido"><br><br>
+                            <label for="nombre">Precio:</label>
+                            <input type="text" id="precio" name="nombre"><br><br>
+                            <button type="button" class="btn btncolor" onclick="agregarFila()">Agregar a Tabla</button>
+                        </form>
                 </div>
                 <table id="tablaproductos" class="table">
                     <thead>
