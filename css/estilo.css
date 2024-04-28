@@ -178,7 +178,8 @@ input[type=reset]:active {
 
 input[type=text],
 input[type=password],
-input[type=email] {
+input[type=email],
+input[type=number] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
@@ -201,14 +202,16 @@ input[type=email] {
 
 input[type=text],
 input[type=password],
-input[type=email]:focus {
+input[type=email],
+input[type=number]:focus {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
 }
 
 input[type=text],
 input[type=password],
-input[type=email]:placeholder {
+input[type=email],
+input[type=number]:placeholder {
   color: #cccccc;
 }
 

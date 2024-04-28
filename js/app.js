@@ -4,12 +4,12 @@ function validarContraseña() {
     var regexNumeros = /\d/; // Expresión regular para números
 
     if (!regexLetras.test(contraseña) || !regexNumeros.test(contraseña)) {
-      alert("La contraseña debe contener al menos una letra y un número.");
-      return false;
+        alert("La contraseña debe contener al menos una letra y un número.");
+        return false;
     }
     return true;
-  }
-  
+}
+
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 
