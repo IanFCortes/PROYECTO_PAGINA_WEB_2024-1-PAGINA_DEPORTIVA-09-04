@@ -12,7 +12,7 @@ function validarContraseña() {
 
 function validaRut(rut) {
     if (!/^(\d{1,2}\.?\d{3}\.?\d{3}-?[\dkK])$/.test(rut)) {
-        alert("RUT incorrecto, ingréselo en el formato 11111111-1");
+        alert("RUT incorrecto, ingréselo en el formato 12345678-9");
         return false;
     }
     // Realiza la validación del RUT aquí
