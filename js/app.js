@@ -4,13 +4,13 @@ function validarContraseña() {
     var regexNumeros = /\d/; // Expresión regular para números
 
     if (!regexLetras.test(contraseña) || !regexNumeros.test(contraseña)) {
-      alert("La contraseña debe contener al menos una letra y un número.");
-      return false;
+        alert("La contraseña debe contener al menos una letra y un número.");
+        return false;
     }
     return true;
-  }
+}
 
-  function validaRut(rut) {
+function validaRut(rut) {
     if (!/^(\d{1,2}\.?\d{3}\.?\d{3}-?[\dkK])$/.test(rut)) {
         alert("RUT incorrecto, ingréselo en el formato 11111111-1");
         return false;
@@ -19,6 +19,15 @@ function validarContraseña() {
     // ...
     return true;
 }
+
+
+function eliminarCliente() {
+    // Obtener el elemento de la lista de clientes
+    const listaClientes = document.getElementById("list-group");
+    // Eliminar el cliente (por ejemplo, el último elemento)
+    listaClientes.lastElementChild.remove();
+}
+
 
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
