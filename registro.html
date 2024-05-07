@@ -84,8 +84,7 @@
                 <div class="mb-3 mt-3">
                     <h5 class="h5letra">Rut</h5>
                     <label for="text" class="form-label"></label>
-                    <input type="text" class="form-control" id="text" placeholder="12345678-9" name="text" minlength="6"
-                        pattern="[A-Za-z]+" required>
+                    <input type="text" class="form-control" id="rut" placeholder="12345678-9" name="text" minlength="10" required>
                 </div>
                 <h5 class="h5letra">Nombre</h5>
                 <label for="text" class="form-label"></label>
@@ -117,7 +116,7 @@
                 </label>
             </div>
             <div class="mt-3 m-2">
-                <button type="submit" class="btn btncolor">Guardar</button>
+                <button type="submit" class="btn btncolor" onclick="validaRut(document.getElementById('rut').value)">Guardar</button>
             </div>
         </form>
     </div>

@@ -9,7 +9,17 @@ function validarContraseña() {
     }
     return true;
   }
-  
+
+  function validaRut(rut) {
+    if (!/^(\d{1,2}\.?\d{3}\.?\d{3}-?[\dkK])$/.test(rut)) {
+        alert("RUT incorrecto, ingréselo en el formato 11111111-1");
+        return false;
+    }
+    // Realiza la validación del RUT aquí
+    // ...
+    return true;
+}
+
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 
