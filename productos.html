@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Administrar productos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <style>
+        body {
+            background-image: url('assets/img/fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light">
+    <div id="__next">
+        <div id="db-wrapper" class="">
+            <div class="navbar-vertical navbar">
+                <div data-simplebar="init" style="max-height:100vh" class="">
+                    <div class="simplebar-wrapper" style="margin: 0px;">
+                        <div class="simplebar-height-auto-observer-wrapper">
+                            <div class="simplebar-height-auto-observer"></div>
+                        </div>
+                        <div class="simplebar-mask">
+                            <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                    aria-label="scrollable content" style="height: auto; overflow: hidden;">
+                                    <div class="simplebar-content" style="padding: 0px;">
+                                        <div class="nav-scroller"><a class="navbar-brand text-success logo h1" href="admin.html">SportBuy</a></div>
+                                        <ul class="navbar-nav flex-column accordion">
+                                            <div class="nav-item"><a class="nav-link active" href="/"><i
+                                                        class="nav-icon fe fe-home me-2"></i></a></div>
+                                            <div class="nav-item">
+                                                <div class="navbar-heading">PEDIDOS Y PRODUCTOS</div>
+                                            </div>
+                                            <li class="nav-item"><a class="nav-link " data-bs-toggle="collapse"
+                                                    data-bs-target="#navDashboard" aria-expanded="false"
+                                                    aria-controls="navDashboard" href="pedidos.html"><i
+                                                        class="nav-icon fe fe-layers me-2"></i> Estado de pedidos</a>
+                                            <li class="nav-item"><a class="nav-link " data-bs-toggle="collapse"
+                                                    data-bs-target="#navDashboard" aria-expanded="false"
+                                                    aria-controls="navDashboard" href="productos.html"><i
+                                                        class="nav-icon fe fe-lock me-2"></i>Administrar productos</a></li>
+                                            <div class="nav-item">
+                                                <div class="navbar-heading">USUARIOS</div>
+                                            </div>
+                                            <li class="nav-item"><a class="nav-link " data-bs-toggle="collapse"
+                                                    data-bs-target="#navDashboard" aria-expanded="false"
+                                                    aria-controls="navDashboard" href="usuarios.html"><i
+                                                        class="nav-icon fe fe-monitor me-2"></i> Lista de usuarios</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simplebar-placeholder" style="width: 249px; height: 607px;"></div>
+                    </div>
+                    <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                        <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                    </div>
+                    <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+                        <div class="simplebar-scrollbar" style="height: 0px; display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="page-content">
+                <div class="header">
+                    <nav class="navbar-classic navbar navbar-expand-lg navbar navbar-expand navbar-light">
+                        <div class="d-flex justify-content-between w-100">
+                            <div class="d-flex align-items-center">
+                                <div class="ms-lg-3 d-none d-md-none d-lg-block">
+                                </div>
+                            </div>
+                            <div class="navbar-right-wrap ms-2 d-flex nav-top-wrap navbar-nav">
+                                <ul class="navbar-right-wrap ms-auto d-flex nav-top-wrap navbar-nav">
+                                    <li class="stopevent dropdown"><a
+                                            href="index.html" class="btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted  "
+                                            id="dropdownNotification" aria-expanded="false"><img src="assets/img/off.png" alt="" width="20" height="20"><i
+                                                class="fe fe-bell"></i></a></li>
+                                    <li class="ms-2 dropdown"><a class="rounded-circle  " id="dropdownUser"
+                                            aria-expanded="false">
+                                            <div class="avatar avatar-md avatar-indicators avatar-online"><img
+                                                    alt="avatar" src="assets/img/user.png"
+                                                    class="rounded-circle"></div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/chile1.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="chile1.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="chile1.html" class="h3 text-decoration-none">CAMISETA LOCAL CHILE 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$54.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/u1.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="u1.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="u1.html" class="h3 text-decoration-none">CAMISETA LOCAL UNIVERSIDAD DE CHILE 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$54.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/colocolo1.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="colo-colo1.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="colo-colo1.html" class="h3 text-decoration-none">CAMISETA VISITA COLO-COLO 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$54.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/chile2.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="chile2.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="chile2.html" class="h3 text-decoration-none">CAMISETA VISITANTE CHILE 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$59.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/u.2.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="u2.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="u2.html" class="h3 text-decoration-none">SHORT LOCAL UNIVERSIDAD DE CHILE 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$34.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/colocolo2.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="colo-colo2.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="colo-colo2.html" class="h3 text-decoration-none">CAMISETA LOCAL COLO-COLO 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$54.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/chile3.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="chile3.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="chile3.html" class="h3 text-decoration-none">SHORTS LOCAL CHILE 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$34.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/u3.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="u3.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="u3.html" class="h3 text-decoration-none">CAMISETA VISITA UNIVERSIDAD DE CHILE 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$54.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 product-wap rounded-0">
+                                        <div class="card rounded-0">
+                                            <img class="card-img rounded-0 img-fluid" src="assets/img/colocolo3.1.jpg">
+                                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="btn btn-success text-white mt-2" href="colo-colo3.html"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="colo-colo3.html" class="h3 text-decoration-none">SHORT LOCAL COLO-COLO 2024</a>
+                                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                <li></li>
+                                                <li class="pt-2">
+                                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-center mb-0">$34.990</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div div="row">
+                                <ul class="pagination pagination-lg justify-content-end">
+                                    <li class="page-item disabled">
+                                        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#" tabindex="-1">1</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+</body>
+
+</html>
