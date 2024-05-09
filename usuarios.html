@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Vista Usuarios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        body {
+            background-image: url('img/fondo2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light">    <div id="__next">
+    <div id="__next">
+        <div id="db-wrapper" class="">
+            <div class="navbar-vertical navbar">
+                <div data-simplebar="init" style="max-height:100vh" class="">
+                    <div class="simplebar-wrapper" style="margin: 0px;">
+                        <div class="simplebar-height-auto-observer-wrapper">
+                            <div class="simplebar-height-auto-observer"></div>
+                        </div>
+                        <div class="simplebar-mask">
+                            <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                    aria-label="scrollable content" style="height: auto; overflow: hidden;">
+                                    <div class="simplebar-content" style="padding: 0px;">
+                                        <div class="nav-scroller"><a class="navbar-brand text-success logo h1" href="admin.html">Adversos</a></div>
+                                        <ul class="navbar-nav flex-column accordion">
+                                            <div class="nav-item"><a class="nav-link active" href="/"><i
+                                                        class="nav-icon fe fe-home me-2"></i></a></div>
+                                            <div class="nav-item">
+                                                <div class="navbar-heading">PEDIDOS Y PRODUCTOS</div>
+                                            </div>
+                                            <li class="nav-item"><a class="nav-link " data-bs-toggle="collapse"
+                                                    data-bs-target="#navDashboard" aria-expanded="false"
+                                                    aria-controls="navDashboard" href="pedidos_admin.html"><i
+                                                        class="nav-icon fe fe-layers me-2"></i> Estado de pedidos</a>
+                                            <li class="nav-item"><a class="nav-link " data-bs-toggle="collapse"
+                                                    data-bs-target="#navDashboard" aria-expanded="false"
+                                                    aria-controls="navDashboard" href="productos_admin.html"><i
+                                                        class="nav-icon fe fe-lock me-2"></i>Administrar productos</a></li>
+                                            <div class="nav-item">
+                                                <div class="navbar-heading">USUARIOS</div>
+                                            </div>
+                                            <li class="nav-item"><a class="nav-link " data-bs-toggle="collapse"
+                                                    data-bs-target="#navDashboard" aria-expanded="false"
+                                                    aria-controls="navDashboard" href="usuarios.html"><i
+                                                        class="nav-icon fe fe-monitor me-2"></i> Lista de usuarios</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simplebar-placeholder" style="width: 249px; height: 607px;"></div>
+                    </div>
+                    <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                        <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                    </div>
+                    <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+                        <div class="simplebar-scrollbar" style="height: 0px; display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="page-content">
+                <div class="header">
+                    <nav class="navbar-classic navbar navbar-expand-lg navbar navbar-expand navbar-light">
+                        <div class="d-flex justify-content-between w-100">
+                            <div class="d-flex align-items-center">
+                                <div class="ms-lg-3 d-none d-md-none d-lg-block">
+                                </div>
+                            </div>
+                            <div class="navbar-right-wrap ms-2 d-flex nav-top-wrap navbar-nav">
+                                <ul class="navbar-right-wrap ms-auto d-flex nav-top-wrap navbar-nav">
+                                    <li class="stopevent dropdown"><a
+                                            href="index.html" class="btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted  "
+                                            id="dropdownNotification" aria-expanded="false"><img src="img/off.png" alt="" width="20" height="20"><i
+                                                class="fe fe-bell"></i></a></li>
+                                    <li class="ms-2 dropdown"><a class="rounded-circle  " id="dropdownUser"
+                                            aria-expanded="false">
+                                            <div class="avatar avatar-md avatar-indicators avatar-online"><img
+                                                    alt="avatar" src="img/user.png"
+                                                    class="rounded-circle"></div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            <div class="bg-primary pt-10 pb-21"></div>
+            <div class="mt-n22 px-6 container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 row">
+                    <div class="col-md-12 col-12">
+                        <div class="card">
+                            <div class="bg-white  py-4 card-header">
+                                <h4 class="mb-0">Usuarios</h4>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="text-nowrap mb-0 table">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Region</th>
+                                            <th>Rut</th>
+                                            <th>Usuario</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="chile1.html">andres3243@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Arica</td>
+                                            <td class="align-middle">20124457-6</td>
+                                            </td>
+                                            <td class="align-middle">andres3243</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="chile1.html">andres3243@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Arica</td>
+                                            <td class="align-middle">20124457-6</td>
+                                            </td>
+                                            <td class="align-middle">andres3243</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="colo-colo1.html">rodrigo3772@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Bio-Bio</td>
+                                            <td class="align-middle">18124467-7</td>
+                                            </td>
+                                            <td class="align-middle">rodrigo3772</td>
+                                        </tr><tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="u3.html">andres99302@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Maule</td>
+                                            <td class="align-middle">19124457-K</td>
+                                            </td>
+                                            <td class="align-middle">andres99302</td>
+                                        </tr><tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="colo-colo3.html">sam3324@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Metropolitana</td>
+                                            <td class="align-middle">18134557-0</td>
+                                            </td>
+                                            <td class="align-middle">sam3324</td>
+                                        </tr><tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="colo-colo3.html">sam3324@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Metropolitana</td>
+                                            <td class="align-middle">18134557-0</td>
+                                            </td>
+                                            <td class="align-middle">sam3324</td>
+                                        </tr><tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="colo-colo3.html">sam3324@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Metropolitana</td>
+                                            <td class="align-middle">18134557-0</td>
+                                            </td>
+                                            <td class="align-middle">sam3324</td>
+                                        </tr><tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="u3.html">andrea223@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Bio-Bio</td>
+                                            <td class="align-middle">19254658-0</td>
+                                            </td>
+                                            <td class="align-middle">andrea223</td>
+                                        </tr><tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="colo-colo2.html">roberto332@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Metropolitana</td>
+                                            <td class="align-middle">19134557-6</td>
+                                            </td>
+                                            <td class="align-middle">roberto332</td>
+                                        </tr><tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <div
+                                                            class="icon-shape icon-md border p-4 rounded-1 bg-white">
+                                                            <img src="img/user.png" height="50" width="50" alt=""
+                                                                class=""></div>
+                                                    </div>
+                                                    <div class="ms-3 lh-1">
+                                                        <h5 class=" mb-1"><a class="text-inherit" href="u3.html">alberto23@gmail.com</a></h5>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">Metropolitana</td>
+                                            <td class="align-middle">18555557-7</td>
+                                            </td>
+                                            <td class="align-middle">alberto23</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"0da9SJ7h69dsiefFOHWfs","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
+<next-route-announcer>
+    <p aria-live="assertive" id="__next-route-announcer__" role="alert"
+        style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;">
+        Dash UI - Next.Js Admin Dashboard Template</p>
+</next-route-announcer>
+<script src="/_next/static/chunks/pages/layouts/layout-vertical-28c8a752c7acf9bc.js"></script>
+<script src="/_next/static/chunks/pages/documentation-748b3644272ec101.js"></script>
+<script src="/_next/static/chunks/pages/changelog-5b84daa3b1964549.js"></script>
+<script src="/_next/static/chunks/pages/pages/profile-90f644d6e8202b95.js"></script>
+<script src="/_next/static/chunks/pages/pages/settings-c205a108e22b1fd6.js"></script>
+<script src="/_next/static/chunks/pages/pages/billing-45ad75cac13a84f5.js"></script>
+<script src="/_next/static/chunks/pages/pages/pricing-f35e01a5260f2914.js"></script>
+<script src="/_next/static/chunks/pages/404-e22c738516ba4079.js"></script>
+</body>
+
+</html>

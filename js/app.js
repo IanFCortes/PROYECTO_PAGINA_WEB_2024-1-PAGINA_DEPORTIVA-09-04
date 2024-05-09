@@ -10,6 +10,22 @@ function validarContraseña() {
     return true;
 }
 
+function cargarRegiones() {
+    fetch('https://private-anon-f0c8a780ca-gonzalobulnes.apiary-mock.com/regiones')
+        .then(response => response.json())
+        .then(data => {
+            const selectRegion = document.getElementById('region');
+            data.forEach(region => {
+                const option = document.createElement('option');
+                option.value = region.region.code;
+                option.textContent = region.region.name;
+                selectRegion.appendChild(option);
+            });
+        })
+        .catch(error => console.error('Error al cargar las regiones:', error));
+}
+
+window.onload = cargarRegiones;
 function guardar() {
     var _nom = document.getElementById("nomb").value;
     var _cat = document.getElementById("cat").value;
