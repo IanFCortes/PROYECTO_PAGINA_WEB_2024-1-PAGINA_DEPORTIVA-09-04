@@ -10,6 +10,29 @@ function validarContraseña() {
     return true;
 }
 
+function guardar() {
+    var _nom = document.getElementById("nomb").value;
+    var _cat = document.getElementById("cat").value;
+    var _precio = document.getElementById("precio").value;
+    var _stock = document.getElementById("stock").value;
+
+    var fila = `<tr><td>${_nom}</td><td>${_cat}</td><td>${_precio}</td><td>${_stock}</td></tr>`;
+    document.getElementById("tablita").innerHTML = fila;
+}
+
+function agregarFila() {
+    var tabla = document.getElementById("tabla-pago-productos");
+    var fila = tabla.insertRow(); // Crea una nueva fila
+
+    // Inserta celdas en la fila
+    var celdaNombre = fila.insertCell(0);
+    var celdaEdad = fila.insertCell(1);
+
+    // Agrega datos a las celdas
+    celdaNombre.innerHTML = "Juan";
+    celdaEdad.innerHTML = "30";
+}
+
 function validaRut(rut) {
     if (!/^(\d{1,2}\.?\d{3}\.?\d{3}-?[\dkK])$/.test(rut)) {
         alert("RUT incorrecto, ingréselo en el formato 12345678-9");
@@ -19,15 +42,6 @@ function validaRut(rut) {
     // ...
     return true;
 }
-
-
-function eliminarCliente() {
-    // Obtener el elemento de la lista de clientes
-    const listaClientes = document.getElementById("list-group");
-    // Eliminar el cliente (por ejemplo, el último elemento)
-    listaClientes.lastElementChild.remove();
-}
-
 
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
@@ -82,6 +96,7 @@ function pagarClicked() {
     }
     actualizarTotalCarrito();
     ocultarCarrito();
+    window.location.href = "pago.html";
 }
 //Funciòn que controla el boton clickeado de agregar al carrito
 function agregarAlCarritoClicked(event) {
